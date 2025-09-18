@@ -7,7 +7,8 @@
     "sync": "node --loader ts-node/esm scripts/sync-docs.ts",
     "sync:dry": "DRY_RUN=1 node --loader ts-node/esm scripts/sync-docs.ts",
     "new:session": "node scripts/new-session.mjs",
-    "log": "node scripts/log.mjs"
+    "log": "node scripts/log.mjs",
+    "greenlight": "node scripts/greenlight.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",
