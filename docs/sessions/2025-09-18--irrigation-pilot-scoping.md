@@ -5,3 +5,16 @@ Kind: thought
 - Option A: gravity-fed mainline; micro-test: 50 m lateral, 2 valves.
 - Option B: solar pump + header tank; micro-test: 1,000 L/hr draw, head 6 m.
 Trade-off: capex vs maintenance; watch for voltage dips in Mukono.
+
+## GREENLIGHT — 2025-09-18 11:52:26
+**Scope:** Pilot a 50 m lateral with 2 valves
+**Acceptance tests:**
+- Flow ≥ 800 L/h
+- Pressure 1.2–1.6 bar at tail
+- No visible leaks after 30 min
+
+## DEV LOG — 2025-09-18 11:52:27
+**Step:** Assemble lateral
+**Expected:** No leaks at 1.4 bar
+**Actual:** Minor seep at joint 3
+**Result:** fail
