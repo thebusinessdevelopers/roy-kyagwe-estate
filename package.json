@@ -9,7 +9,8 @@
     "new:session": "node scripts/new-session.mjs",
     "log": "node scripts/log.mjs",
     "greenlight": "node scripts/greenlight.mjs",
-    "devlog": "node scripts/devlog.mjs"
+    "devlog": "node scripts/devlog.mjs",
+    "save": "node scripts/save.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",
