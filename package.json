@@ -10,7 +10,8 @@
     "log": "node scripts/log.mjs",
     "greenlight": "node scripts/greenlight.mjs",
     "devlog": "node scripts/devlog.mjs",
-    "save": "node scripts/save.mjs"
+    "save": "node scripts/save.mjs",
+    "promote": "node scripts/promote.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",
