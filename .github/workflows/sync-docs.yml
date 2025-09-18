@@ -1,12 +1,10 @@
 name: Sync Docs to Supabase
-
 on:
   push:
     branches: [ "main" ]
     paths:
       - "docs/**"
       - "bmad-core/**"
-
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -18,7 +16,7 @@ jobs:
         with:
           node-version: "20"
       - name: Install deps
-        run: npm install
+        run: npm ci
       - name: Run sync
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
