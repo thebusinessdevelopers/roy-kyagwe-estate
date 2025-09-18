@@ -1,0 +1,9 @@
+template:
+  id: kyagwe.decision-log.v1
+  name: "Decision Log — Kyagwe"
+fields:
+  - { id: title,     label: "Decision" }
+  - { id: rationale, label: "Why" }
+  - { id: status,    label: "Status", enum: ["proposed","accepted","rejected"] }
+  - { id: acceptance,label: "Acceptance tests", type: "list" }
+  - { id: links,     label: "Related artefacts", type: "list" }

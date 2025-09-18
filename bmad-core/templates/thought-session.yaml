@@ -1,0 +1,12 @@
+template:
+  id: kyagwe.thought-session.v1
+  name: "Thought Session — Roy Kyagwe Estate"
+workflow:
+  mode: "incremental"
+sections:
+  - { id: context,   title: "Context & aim",        instruction: "Summarise aim; list constraints (labour/inputs/time/weather)." }
+  - { id: facts,     title: "Ground facts",         instruction: "Pull only needed facts from File Library; cite source." }
+  - { id: options,   title: "Options & trade-offs", instruction: "2–3 options; failure modes; Uganda-safe workarounds." }
+  - { id: decision,  title: "Decision & tests",     instruction: "Decision; acceptance criteria; one micro-test." }
+  - { id: actions,   title: "Next actions",         instruction: "3–6 steps, owners, dates; printable." }
+  - { id: greenlight,title: "GREENLIGHT",           instruction: "Single line scope + handoff note to dev (if ready)." }

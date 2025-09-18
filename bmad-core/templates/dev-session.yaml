@@ -1,0 +1,8 @@
+template:
+  id: kyagwe.dev-session.v1
+  name: "Dev Session — Kyagwe"
+sections:
+  - { id: brief,  title: "Brief",            instruction: "Restate GREENLIGHT scope + acceptance tests." }
+  - { id: plan,   title: "Plan of attack",   instruction: "Smallest verifiable steps." }
+  - { id: steps,  title: "Steps & micro-tests", instruction: "For each step: change, expected, micro-test, outcome." }
+  - { id: result, title: "Result & next",    instruction: "State, blockers, next micro-test." }
