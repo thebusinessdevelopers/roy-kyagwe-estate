@@ -37,3 +37,6 @@ Trade-off: capex vs. serviceability in Mukono; micro-test each for 1 day.
 
 ## facts — 2025-09-19 12:48:25
 - Voltage dips common mid-day (UMEME). Monitor during micro-tests.
+
+## facts — 2025-09-19 13:02:48
+- Water source head measured at 6.2 m.
