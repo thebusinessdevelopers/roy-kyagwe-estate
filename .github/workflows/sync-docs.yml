@@ -3,11 +3,6 @@ name: Sync Docs to Supabase
 on:
   push:
     branches: [ "main" ]
-    paths:
-      - "docs/**"
-      - "bmad-core/**"
-      - ".github/workflows/sync-docs.yml"
-      - "scripts/sync-docs.mjs"
   workflow_dispatch:
 
 jobs:
