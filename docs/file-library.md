@@ -1,5 +1,5 @@
 # Kyagwe File Library (auto-generated)
-Updated: 2025-09-19T17:02:17.812Z
+Updated: 2025-09-19T17:08:28.834Z
 
 ## How to use this library
 - **sessions/** — living notes. Use sections: *facts*, *options*, *decision*, *actions*.
@@ -10,6 +10,7 @@ Updated: 2025-09-19T17:02:17.812Z
 - **knowledge/** — base PDFs/MD used as ground truth.
 
 ## Knowledge (base sources)
+- [_tmp.md](docs/knowledge/_tmp.md)
 - [15_09_25-farm-walkthrough.pdf](docs/knowledge/15_09_25-farm-walkthrough.pdf)
 - [17_09_25-bamboo-walkthrough.pdf](docs/knowledge/17_09_25-bamboo-walkthrough.pdf)
 - [bamboo-processing-research.pdf](docs/knowledge/bamboo-processing-research.pdf)
