@@ -28,7 +28,7 @@ const includeDirs = [
   'bmad-core/checklists',
   'bmad-core/data',
 ];
-const allowedExts = new Set(['.md', '.markdown', '.yml', '.yaml']);
+const allowedExts = new Set(['.md', '.markdown', '.yml', '.yaml', '.pdf']);
 
 const sha256 = s => crypto.createHash('sha256').update(s).digest('hex');
 const titleFrom = p => path.basename(p).replace(/\.(md|markdown|yml|yaml)$/i,'').replace(/[-_]/g,' ').trim();
