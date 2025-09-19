@@ -1,5 +1,5 @@
 # Kyagwe File Library (auto-generated)
-Updated: 2025-09-19T16:29:39.415Z
+Updated: 2025-09-19T16:46:53.730Z
 
 ## How to use this library
 - **sessions/** — living notes. Use sections: *facts*, *options*, *decision*, *actions*.
@@ -19,9 +19,7 @@ Updated: 2025-09-19T16:29:39.415Z
 - [ucda-robusta-coffee-handbook.pdf](docs/knowledge/ucda-robusta-coffee-handbook.pdf)
 
 ## Sessions (newest first)
-- 2025-09-18 — [Kickoff](docs/sessions/2025-09-18--kickoff.md) — updated: 2025-09-18 · GREENLIGHT: —
-- 2025-09-18 — [Irrigation pilot scoping](docs/sessions/2025-09-18--irrigation-pilot-scoping.md) — kind: thought · zone: Block-A · updated: 2025-09-19 · GREENLIGHT: ✅
-- 2025-09-18 — [BMAD pilot planning](docs/sessions/2025-09-18--bmad-pilot-planning.md) — kind: thought · zone: Joshua · updated: 2025-09-19 · GREENLIGHT: —
+_None yet_
 
 ## Agents
 - [dev](bmad-core/agents/dev.md)
