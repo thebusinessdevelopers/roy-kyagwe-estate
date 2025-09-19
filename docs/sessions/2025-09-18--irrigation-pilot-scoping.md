@@ -27,3 +27,8 @@ Trade-off: capex vs maintenance; watch for voltage dips in Mukono.
 - **Acceptance tests:**
 - Runtime ≥ 4h
 - Flow ≥ 800 L/h
+
+## actions — 2025-09-19 12:47:10
+- Prepare 50 m lateral parts on bench.
+- Tighten all joints; re-test at 1.4 bar for 30 min.
+- Record flow and pressure at tail.
