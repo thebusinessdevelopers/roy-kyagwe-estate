@@ -17,7 +17,8 @@
     "build:library": "node scripts/build-file-library.mjs",
     "sessions": "node scripts/list-sessions.mjs",
     "amend": "node scripts/amend.mjs",
-    "amend:dry": "DRY=1 node scripts/amend.mjs"
+    "amend:dry": "DRY=1 node scripts/amend.mjs",
+    "plan": "node scripts/plan-amend.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",
