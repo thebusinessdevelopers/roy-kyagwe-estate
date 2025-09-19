@@ -18,3 +18,12 @@ Trade-off: capex vs maintenance; watch for voltage dips in Mukono.
 **Expected:** No leaks at 1.4 bar
 **Actual:** Minor seep at joint 3
 **Result:** fail
+
+
+## DECISION
+- **What:** Switch pump
+- **Why:** Voltage dips
+- **Status:** accepted
+- **Acceptance tests:**
+- Runtime ≥ 4h
+- Flow ≥ 800 L/h
