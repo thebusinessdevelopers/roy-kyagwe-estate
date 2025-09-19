@@ -31,3 +31,6 @@ Trade-off: capex vs. serviceability in Mukono; micro-test each for 1 day.
 - Prepare 50 m lateral parts on bench.
 - Tighten all joints; re-test at 1.4 bar for 30 min.
 - Record flow and pressure at tail.
+
+## facts — 2025-09-19 12:48:25
+- Voltage dips common mid-day (UMEME). Monitor during micro-tests.
