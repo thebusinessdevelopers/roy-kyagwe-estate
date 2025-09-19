@@ -12,7 +12,9 @@
     "devlog": "node scripts/devlog.mjs",
     "save": "node scripts/save.mjs",
     "promote": "node scripts/promote.mjs",
-    "count": "node scripts/count.mjs"
+    "count": "node scripts/count.mjs",
+    "decision": "node scripts/decision.mjs",
+    "build:library": "node scripts/build-file-library.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",
