@@ -11,7 +11,8 @@
     "greenlight": "node scripts/greenlight.mjs",
     "devlog": "node scripts/devlog.mjs",
     "save": "node scripts/save.mjs",
-    "promote": "node scripts/promote.mjs"
+    "promote": "node scripts/promote.mjs",
+    "count": "node scripts/count.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",
