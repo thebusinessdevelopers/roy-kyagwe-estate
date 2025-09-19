@@ -20,7 +20,7 @@ function listSessions(){
     const green = /##\s*GREENLIGHT/i.test(txt);
     const m = stat(p)?.mtime?.toISOString() || '';
     return { f, p, title, zone, kind, green, m };
-  }).sort((a,b)=>b.f.localeCompare(a.f)); // newest first by filename prefix (YYYY-MM-DD)
+  }).sort((a,b)=>b.f.localeCompare(a.f)); // newest first (YYYY-MM-DD prefix)
 }
 
 function list(dir, exts){
@@ -36,10 +36,19 @@ function listArtefacts(){
   try { return JSON.parse(read(idx)); } catch { return { items: [] }; }
 }
 
+function listFiles(dir) {
+  return fs.existsSync(dir)
+    ? fs.readdirSync(dir).map(f => ({ f, p: path.join(dir, f) }))
+    : [];
+}
+
 const sessions   = listSessions();
 const agents     = list('bmad-core/agents', ['.md']);
 const templates  = list('bmad-core/templates', ['.yaml','.yml']);
 const artefacts  = listArtefacts();
+const knowledge  = listFiles('docs/knowledge')
+  .filter(({f}) => /\.(md|pdf)$/i.test(f))
+  .sort((a,b) => a.f.localeCompare(b.f));
 
 const lines = [];
 lines.push('# Kyagwe File Library (auto-generated)');
@@ -48,10 +57,20 @@ lines.push('');
 lines.push('## How to use this library');
 lines.push('- **sessions/** — living notes. Use sections: *facts*, *options*, *decision*, *actions*.');
 lines.push('- **GREENLIGHT** — the only signal that work can move to **dev**.');
-lines.push('- **bmad-core/agents/** — prompts that drive “partner” and “dev”. Paste these into Cursor/Claude agent profiles.');
-lines.push('- **bmad-core/templates/** — checklists and session scaffolds; reference while logging.');
-lines.push('- **artefacts/validated/** — last known-good configs (n8n nodes, JSON, etc.). Promote only when tests pass.');
+lines.push('- **bmad-core/agents/** — prompts that drive “partner” and “dev”.');
+lines.push('- **bmad-core/templates/** — checklists and session scaffolds.');
+lines.push('- **artefacts/validated/** — last known-good configs.');
+lines.push('- **knowledge/** — base PDFs/MD used as ground truth.');
 lines.push('');
+
+lines.push('## Knowledge (base sources)');
+if (knowledge.length === 0) {
+  lines.push('_None_');
+} else {
+  for (const k of knowledge) lines.push(asMDLink(k.p, k.f));
+}
+lines.push('');
+
 lines.push('## Sessions (newest first)');
 if (sessions.length===0) lines.push('_None yet_');
 for (const s of sessions){
@@ -63,6 +82,7 @@ for (const s of sessions){
   lines.push(`- ${s.f.slice(0,10)} — [${s.title}](${s.p}) — ${bits.join(' · ')}`);
 }
 lines.push('');
+
 lines.push('## Agents');
 if (agents.length===0) lines.push('_None_');
 for (const a of agents){
@@ -70,12 +90,12 @@ for (const a of agents){
   lines.push(asMDLink(a.p, title));
 }
 lines.push('');
+
 lines.push('## Templates');
 if (templates.length===0) lines.push('_None_');
-for (const t of templates){
-  lines.push(asMDLink(t.p, t.f));
-}
+for (const t of templates) lines.push(asMDLink(t.p, t.f));
 lines.push('');
+
 lines.push('## Artefacts (validated — last known good)');
 if (!artefacts.items || artefacts.items.length===0) {
   lines.push('_None promoted yet_');
@@ -85,6 +105,7 @@ if (!artefacts.items || artefacts.items.length===0) {
   }
 }
 lines.push('');
+
 fs.mkdirSync('docs',{recursive:true});
 fs.writeFileSync(out, lines.join('\n'));
 console.log(`wrote ${out}`);
