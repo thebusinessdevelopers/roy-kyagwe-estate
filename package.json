@@ -14,7 +14,8 @@
     "promote": "node scripts/promote.mjs",
     "count": "node scripts/count.mjs",
     "decision": "node scripts/decision.mjs",
-    "build:library": "node scripts/build-file-library.mjs"
+    "build:library": "node scripts/build-file-library.mjs",
+    "sessions": "node scripts/list-sessions.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",
