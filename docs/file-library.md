@@ -1,5 +1,5 @@
 # Kyagwe File Library (auto-generated)
-Updated: 2025-09-19T16:46:53.730Z
+Updated: 2025-09-19T16:53:07.283Z
 
 ## How to use this library
 - **sessions/** — living notes. Use sections: *facts*, *options*, *decision*, *actions*.
